@@ -1,0 +1,91 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+li{
+  list-style: none;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.app{
+  margin-left:15%;
+  margin-right: 15%;
+}
+
+.posts{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:1rem;
+  margin-top:3rem;
+}
+
+.post{
+  box-shadow: 10px 10px pink;
+  padding-inline:1rem;
+  padding-block:1rem;
+}
+
+.title {
+  color:salmon;
+  font-weight: bold;
+}
+
+.posts span{
+  color:pink;
+}
+.headers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  margin-top:2rem;
+}
+
+
+.headers a{
+  text-decoration: none;
+  color:pink;
+  font-size: 20px;
+}
+
+.headers a:hover{
+  color:salmon;
+  font-weight: bold;
+}
+
+.headers a:focus{
+  color:salmon;
+  font-weight: bold;
+}
+
+.home-title{
+  text-align: center;
+  margin-top:2rem;
+  color:salmon;
+}
